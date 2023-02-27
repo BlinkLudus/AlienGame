@@ -236,8 +236,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c221fbfb3945f7d4a8e4ab5a2f80b7b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMessage: This is a new message
-  anotherMessage: This is the new updated message
+  messages:
+  - This is the first message
+  - This is the second message
+  - This is the third message
+  - This is the fourth message
+  message1: Hello there
+  message2: Goodbye
+  message3: 
+  messageChoice: 2
 --- !u!4 &1906352978
 Transform:
   m_ObjectHideFlags: 0
