@@ -6,6 +6,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    //Speed settings in metres/second
+    public float speed = 1;
+
     //Reference variable so we can use the Rigidbody
     private Rigidbody2D physicsBody = null;
 
@@ -21,10 +24,23 @@ public class PlayerMovement : MonoBehaviour
         Vector2 newVelocity = physicsBody.velocity;
 
         //Set our velocity to move in the negative x (left) direction
-        newVelocity.x = -1;
+        newVelocity.x = -speed;
 
         //Update our physics component's velocity to be our newly changed value
         physicsBody.velocity = newVelocity;
 
+    }
+
+    public void MoveRight()
+    {
+        //Make a variable to hold our velocity and get 
+        //the current velocity from the physics component
+        Vector2 newVelocity = physicsBody.velocity;
+
+        //Set our velocity to move in the negative x (left) direction
+        newVelocity.x = speed;
+
+        //Update our physics component's velocity to be our newly changed value
+        physicsBody.velocity = newVelocity;
     }
 }
