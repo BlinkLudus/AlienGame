@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Hazard : MonoBehaviour
 {
-    public string targetScene = "";
+    
+    public int hazardDamage = 2;
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Get the collider of the object we collided with
@@ -17,16 +18,10 @@ public class Hazard : MonoBehaviour
         // Check if we found a player health script on the collided object
         if (player != null)
         {
-            // Call the Kill function
-            changeScene();
+            player.ChangeHealth(-hazardDamage);            
         }
        
         
-    }
-
-    public void changeScene()
-    {
-        SceneManager.LoadScene(targetScene);
-    }
+    }  
 
 }

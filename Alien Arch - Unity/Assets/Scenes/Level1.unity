@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9ce1fceae1a0d4588182bf8bfbf6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: TitleScene
+  hazardDamage: 5
 --- !u!61 &108353341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6694,6 +6694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4582fd3ea72bc84b80fc357a485c2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 10
+  targetScene: TitleScene
 --- !u!1 &1437923324
 GameObject:
   m_ObjectHideFlags: 0
