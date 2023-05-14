@@ -6696,6 +6696,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 10
   targetScene: TitleScene
+--- !u!95 &1403546012
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403546002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e33ea9f177df2004299dc6cd8fc5c98d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1437923324
 GameObject:
   m_ObjectHideFlags: 0
@@ -11365,7 +11385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8484806163708773365, guid: cf2e2c0f118b31a4a84cb5e20d9ece98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.19
+      value: -5.45
       objectReference: {fileID: 0}
     - target: {fileID: 8484806163708773365, guid: cf2e2c0f118b31a4a84cb5e20d9ece98, type: 3}
       propertyPath: m_LocalPosition.y
